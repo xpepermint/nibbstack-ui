@@ -120,8 +120,11 @@ export default {
     border-top-left-radius: 25px;
     font-size: inherit;
     line-height: 50px;
-    min-width: 300px;
     padding: 0 1.5rem;
+
+    @include breakpoint(medium) {
+      min-width: 350px;
+    }
 
     &:focus {
       box-shadow: none;

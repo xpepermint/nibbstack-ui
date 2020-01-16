@@ -1,7 +1,7 @@
 <template>
   <div class="navigation">
     <div class="container">
-      <div class="d-flex">
+      <div class="flex">
         <div class="logo">
           <img src="/images/nibbstack-logo.svg" alt="NibbStack" />
         </div>
@@ -24,6 +24,11 @@ export default {}
   padding: var(--space);
   position: fixed;
   width: 100%;
+
+  .flex {
+    align-items: center;
+    display: flex;
+  }
 
   .logo {
     flex: 1 0;
