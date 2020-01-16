@@ -1,0 +1,60 @@
+
+@mixin breakpoint($point) {
+  @if $point=='wide' {
+    @media (min-width: 120em) {
+      @content ;
+    }
+  }
+
+  @if $point=='large' {
+    @media (min-width: 84em) {
+      @content ;
+    }
+  }
+
+  @if $point=='desktop' {
+    @media (min-width: 65em) {
+      @content ;
+    }
+  }
+
+  @else if $point=='medium' {
+    @media (min-width: 50em) {
+      @content ;
+    }
+  }
+
+  @else if $point=='small' down {
+    @media (max-width: 50em) {
+      @content ;
+    }
+  }
+}
+
+:root {
+  --responsive-padding: 2rem;
+  --controller-height: 50px;
+  --space: 0.5rem;
+  --primary-font: 'Roboto', sans-serif;
+  --global-radius: 4px;
+  --quick: cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  --ease: cubic-bezier(0.32, 0.23, 0.49, 0.95) 300ms;
+  --box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  --box-shadow-hover: 0 4px 5px 0 rgba(0, 0, 0, 0.14);
+  --box-shadow-dropdown: 0 6px 10px 0 rgba(0, 0, 0, 0.14);
+  --box-shadow-focus: 0 0 10px 0 var(--secondary-color);
+  --max-width: 76rem;
+
+  // Colors
+  --primary-color: #7322b1;
+  --secondary-color: #31c3bc;
+  --text-color: #fff;
+  --border-light: rgba(255, 255, 255, 0.1);
+
+  @include breakpoint(medium) {
+    --responsive-padding: 5rem;
+    --controller-height: 56px;
+    --space: 1rem;
+    --top-fold-height: 142px;
+  }
+}
