@@ -25,7 +25,7 @@
       </div>
       <div key="success" v-else-if="state === 2">
         <img class="icon" src="/icons/success.svg" alt="Success" />
-        <p>Thank you for your interes! We'll contact you shortly.</p>
+        <p>Thank you for your interest! We'll contact you shortly.</p>
       </div>
       <div key="error" v-else-if="state === 3">
         <img class="icon" src="/icons/error.svg" alt="Error" />
