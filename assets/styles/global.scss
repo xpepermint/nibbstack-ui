@@ -5,6 +5,7 @@
 
 .d-flex {
   @include breakpoint(medium) {
+    align-items: center;
     display: flex;
     width: 100%;
 

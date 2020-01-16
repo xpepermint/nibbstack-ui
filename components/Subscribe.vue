@@ -71,7 +71,7 @@ export default {
       try {
         this.state = 1
         await this.$axios.$post(
-          'https://www-api.0xcert.org/newsletters/request',
+          'https://mzenxvwh7d.execute-api.eu-central-1.amazonaws.com/dev/subscriptions',
           this.data
         )
         this.state = 2
