@@ -12,7 +12,7 @@
               <input
                 v-model="data.email"
                 type="text"
-                placeholder="Enter your e-mail"
+                placeholder="Sign up for early access"
               />
               <span v-show="errors[0]" class="alert">{{ errors[0] }}</span>
             </validation-provider>

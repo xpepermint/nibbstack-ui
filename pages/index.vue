@@ -2,11 +2,10 @@
   <div class="intro">
     <div class="image-bg">
       <div class="content">
-        <h1>Rust Private Registry</h1>
+        <h1>Rust Alternative Registry</h1>
         <h3>
-          First <strong>clooud based</strong> Rust private registry for your
-          <strong>private crates</strong> comming soon!
-          <strong>Subscribe</strong> for the news!
+          Create an alternative registry for Rust, published crates directly
+          from Cargo, manage access and easily collaborate with your team!
         </h3>
         <subscribe />
       </div>
@@ -31,7 +30,7 @@ export default {
 }
 
 .content {
-  max-width: 600px;
+  max-width: 750px;
   text-align: center;
 
   h1 {

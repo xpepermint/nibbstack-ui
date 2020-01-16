@@ -6,7 +6,7 @@
           <img src="/images/nibbstack-logo.svg" alt="NibbStack" />
         </div>
         <div class="main-menu">
-          <a href="mailto:info@nibbstack.com">Contact Us</a>
+          <a href="mailto:info@nibbstack.com">Contact</a>
         </div>
       </div>
     </div>
