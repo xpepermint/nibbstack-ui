@@ -1,9 +1,9 @@
 <template>
   <div class="form">
     <transition mode="out-in" name="fade">
-      <div key="form" v-if="state === 0">
+      <div v-if="state === 0" key="form">
         <validation-observer ref="observer" v-slot="{ passes }">
-          <form @submit.prevent="passes(submitForm)" class="subscribe">
+          <form class="subscribe" @submit.prevent="passes(submitForm)">
             <validation-provider
               v-slot="{ errors }"
               rules="required|email"
@@ -20,14 +20,14 @@
           </form>
         </validation-observer>
       </div>
-      <div key="loading" v-else-if="state === 1">
+      <div v-else-if="state === 1" key="loading">
         <img class="icon" src="/icons/loader.svg" alt="Loading" />
       </div>
-      <div key="success" v-else-if="state === 2">
+      <div v-else-if="state === 2" key="success">
         <img class="icon" src="/icons/success.svg" alt="Success" />
         <p>Thank you for your interest! We'll contact you shortly.</p>
       </div>
-      <div key="error" v-else-if="state === 3">
+      <div v-else-if="state === 3" key="error">
         <img class="icon" src="/icons/error.svg" alt="Error" />
         <p>Something went wrong. Try again later.</p>
       </div>

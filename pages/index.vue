@@ -2,6 +2,7 @@
   <div class="intro">
     <div class="image-bg">
       <div class="content">
+        <img src="/images/rpr_logo.svg" alt="Rust Alternative Registry" />
         <h1>Rust Alternative Registry</h1>
         <h3>
           Create an alternative registry for Rust, published crates directly
@@ -35,6 +36,7 @@ export default {
 
   h1 {
     font-size: 40px;
+    font-weight: 300;
     margin-bottom: 2rem;
 
     @include breakpoint(medium) {

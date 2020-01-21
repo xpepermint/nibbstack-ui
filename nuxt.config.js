@@ -24,10 +24,14 @@ export default {
   css: ['~/assets/styles/global'],
   plugins: [],
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'G-EH3WZ31N2S'
+      }
+    ]
   ],
   styleResources: {
     scss: ['./assets/styles/variables.scss']

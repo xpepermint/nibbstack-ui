@@ -32,6 +32,10 @@ export default {}
 
   .logo {
     flex: 1 0;
+
+    img {
+      display: block;
+    }
   }
 
   .main-menu {
