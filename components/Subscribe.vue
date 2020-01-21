@@ -152,6 +152,8 @@ export default {
 
     &:hover {
       background-color: var(--secondary-color);
+      color: #333;
+      text-shadow: none;
     }
   }
 }
