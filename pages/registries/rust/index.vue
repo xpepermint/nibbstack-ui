@@ -22,7 +22,7 @@ export default {
       title: 'Rust Alternative Registry',
       description:
         'Create an alternative registry for Rust, published crates directly from Cargo, manage access and easily collaborate with your team!',
-      category: 'alternative_registry',
+      category: 'Rust',
       logo: 'logo_rust_alternative_registry.svg'
     }
   },

@@ -74,6 +74,7 @@ export default {
   },
   methods: {
     async submitForm() {
+      this.$ga.event(this.data.category, 'Signup', 'BetaSignup', 'Value')
       const isValid = await this.$refs.observer.validate()
       if (!isValid) {
         return

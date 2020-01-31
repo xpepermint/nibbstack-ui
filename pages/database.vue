@@ -22,7 +22,7 @@ export default {
       title: 'Serverless Database',
       description:
         'A distributed database as a service built for modern serverless applications.',
-      category: 'serverless_database',
+      category: 'Serverless_Database',
       logo: 'logo_serverless_database.svg'
     }
   },

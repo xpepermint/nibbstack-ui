@@ -22,7 +22,7 @@ export default {
       title: 'Serverless Storage',
       description:
         'A distributed storage as a service built for modern serverless applications.',
-      category: 'serverless_storage',
+      category: 'Serverless_Storage',
       logo: 'logo_serverless_storage.svg'
     }
   },

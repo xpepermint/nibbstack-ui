@@ -22,7 +22,7 @@ export default {
       title: 'Serverless authentication',
       description:
         'Seamless authentication integration for event-driven and serverless applications.',
-      category: 'serverless_authentication',
+      category: 'Serverless_Auth',
       logo: 'logo_serverless_authentication.svg'
     }
   },

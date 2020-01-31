@@ -35,7 +35,11 @@ export default {
     quiet: true,
     fix: true
   },
-  modules: ['@nuxtjs/axios', '@nuxtjs/style-resources'],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/style-resources',
+    ['@nuxtjs/google-tag-manager', { id: 'GTM-52KS2KP' }]
+  ],
   axios: {},
   build: {
     extend(config, ctx) {}
