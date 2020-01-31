@@ -32,3 +32,47 @@ body {
 a {
   color: var(--text-color);
 }
+
+.intro {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 750px;
+  text-align: center;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 2rem;
+
+    @include breakpoint(medium) {
+      font-size: 52px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.8;
+
+    @include breakpoint(medium) {
+      font-size: 24px;
+    }
+  }
+}
+
+.image-bg {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 1rem 1rem;
+  width: 100%;
+
+  @include breakpoint(desktop) {
+    background-size: initial;
+  }
+}

@@ -19,11 +19,11 @@ export default {
   },
   data() {
     return {
-      title: 'Cloud Application Platform',
+      title: 'Serverless authentication',
       description:
-        'We are developers building something awesome for developers.',
-      logo: 'cloud_platform.svg',
-      category: 'cloud_platform'
+        'Seamless authentication integration for event-driven and serverless applications.',
+      category: 'serverless_authentication',
+      logo: 'logo_serverless_authentication.svg'
     }
   },
   head() {

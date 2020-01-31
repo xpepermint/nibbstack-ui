@@ -19,11 +19,11 @@ export default {
   },
   data() {
     return {
-      title: 'Cloud Application Platform',
+      title: 'Serverless Database',
       description:
-        'We are developers building something awesome for developers.',
-      logo: 'cloud_platform.svg',
-      category: 'cloud_platform'
+        'A distributed database as a service built for modern serverless applications.',
+      category: 'serverless_database',
+      logo: 'logo_serverless_database.svg'
     }
   },
   head() {

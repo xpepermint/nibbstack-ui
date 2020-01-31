@@ -19,11 +19,11 @@ export default {
   },
   data() {
     return {
-      title: 'Cloud Application Platform',
+      title: 'Serverless Storage',
       description:
-        'We are developers building something awesome for developers.',
-      logo: 'cloud_platform.svg',
-      category: 'cloud_platform'
+        'A distributed storage as a service built for modern serverless applications.',
+      category: 'serverless_storage',
+      logo: 'logo_serverless_storage.svg'
     }
   },
   head() {

@@ -19,11 +19,11 @@ export default {
   },
   data() {
     return {
-      title: 'Cloud Application Platform',
+      title: 'Serverless Infrastructure',
       description:
-        'We are developers building something awesome for developers.',
-      logo: 'cloud_platform.svg',
-      category: 'cloud_platform'
+        'A modern cloud application platform for deploying and running cloud lambda functions and containers.',
+      category: 'serverless_infrastructure',
+      logo: 'logo_serverless_infrastructure.svg'
     }
   },
   head() {

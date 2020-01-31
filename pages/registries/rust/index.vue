@@ -19,11 +19,11 @@ export default {
   },
   data() {
     return {
-      title: 'Cloud Application Platform',
+      title: 'Rust Alternative Registry',
       description:
-        'We are developers building something awesome for developers.',
-      logo: 'cloud_platform.svg',
-      category: 'cloud_platform'
+        'Create an alternative registry for Rust, published crates directly from Cargo, manage access and easily collaborate with your team!',
+      category: 'alternative_registry',
+      logo: 'logo_rust_alternative_registry.svg'
     }
   },
   head() {

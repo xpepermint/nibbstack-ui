@@ -54,13 +54,23 @@ export default {
     ValidationProvider,
     ValidationObserver
   },
+  props: {
+    category: {
+      type: String,
+      default: ''
+    }
+  },
   data() {
     return {
       state: 0,
       data: {
-        email: ''
+        email: '',
+        category: ''
       }
     }
+  },
+  mounted() {
+    this.data.category = this.category
   },
   methods: {
     async submitForm() {
