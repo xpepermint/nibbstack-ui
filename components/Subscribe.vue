@@ -1,9 +1,9 @@
 <template>
   <div class="form">
     <transition mode="out-in" name="fade">
-      <div v-if="state === 0" key="form">
+      <div key="form" v-if="state === 0">
         <validation-observer ref="observer" v-slot="{ passes }">
-          <form class="subscribe" @submit.prevent="passes(submitForm)">
+          <form @submit.prevent="passes(submitForm)" class="subscribe">
             <validation-provider
               v-slot="{ errors }"
               rules="required|email"
@@ -20,14 +20,14 @@
           </form>
         </validation-observer>
       </div>
-      <div v-else-if="state === 1" key="loading">
+      <div key="loading" v-else-if="state === 1">
         <img class="icon" src="/icons/loader.svg" alt="Loading" />
       </div>
-      <div v-else-if="state === 2" key="success">
+      <div key="success" v-else-if="state === 2">
         <img class="icon" src="/icons/success.svg" alt="Success" />
         <p>Thank you for your interest! We'll contact you shortly.</p>
       </div>
-      <div v-else-if="state === 3" key="error">
+      <div key="error" v-else-if="state === 3">
         <img class="icon" src="/icons/error.svg" alt="Error" />
         <p>Something went wrong. Try again later.</p>
       </div>
@@ -74,7 +74,7 @@ export default {
   },
   methods: {
     async submitForm() {
-      this.$ga.event(this.data.category, 'Signup', 'BetaSignup', 'Value')
+      this.$ga.event(this.data.category, 'Signup', 'BetaSignup', 0)
       const isValid = await this.$refs.observer.validate()
       if (!isValid) {
         return
