@@ -16,7 +16,7 @@
               />
               <span v-show="errors[0]" class="alert">{{ errors[0] }}</span>
             </validation-provider>
-            <button type="submit">Notify me</button>
+            <button type="submit">Sign up</button>
           </form>
         </validation-observer>
       </div>
