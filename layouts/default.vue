@@ -1,15 +1,15 @@
 <template>
   <div class="layout app_rpr">
-    <navigation />
+    <!-- <navigation /> -->
     <nuxt />
   </div>
 </template>
 
 <script>
-import Navigation from '~/components/Navigation'
+// import Navigation from '~/components/Navigation'
 export default {
   components: {
-    Navigation
+    // Navigation
   }
 }
 </script>

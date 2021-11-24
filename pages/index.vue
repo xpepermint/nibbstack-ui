@@ -2,8 +2,11 @@
   <div class="intro">
     <div class="image-bg">
       <div class="content">
-        <img :src="`/images/${logo}`" :alt="title" />
-        <h1 v-text="title" />
+        <!-- <img :src="`/images/${logo}`" :alt="title" /> -->
+        <!-- <h1 v-text="title" /> -->
+        <img src="/images/nibbstack-logo.svg" alt="NibbStack" width="200" />
+        <br />
+        <br />
         <h3 v-text="description" />
         <subscribe :category="category" />
       </div>
@@ -28,7 +31,7 @@ export default {
   },
   head() {
     return {
-      title: `Nibbstack - ${this.title}`,
+      title: `Nibbstack`,
       meta: [
         {
           hid: 'type',

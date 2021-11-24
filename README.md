@@ -6,7 +6,8 @@
 
 ``` bash
 # install dependencies
-$ npm run install
+$ nvm use 10
+$ npm i
 
 # serve with hot reload at localhost:3000
 $ npm run dev
