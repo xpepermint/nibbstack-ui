@@ -14,7 +14,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.9.3",
     "@nuxtjs/google-tag-manager": "^2.3.1",
-    "nuxt": "^2.11.0",
+    "nuxt": "^2.15.8",
     "vee-validate": "^3.2.1"
   },
   "devDependencies": {
